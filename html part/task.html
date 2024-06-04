@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of guns in Hunt:Showdown</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+      }
+
+      .footerFormOne {
+          margin: 20px;
+      }
+
+      .emailForm {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .emailForm label,
+      .emailForm select,
+      .emailForm button {
+          margin-bottom: 20px;
+      }
+
+      .footerBtn {
+          width: 40%;
+          padding: 15px;
+          background-color: #8f6767;
+          color: white;
+          border: none;
+          cursor: pointer;
+      }
+
+      .footerBtn:hover {
+          background-color: #8f6767;
+      }
+      select {
+          width: 150px;}
+      .messageInput {
+          width: 300px; 
+          padding: 15px; 
+          border: 1px solid #4d0202;
+        }
+      
+      
+
+  </style>
+</head>
+<body>
+  <noscript>JS is not working</noscript>
+
+  <script src="html part/task.js"></script>
+  <script src="html part/json.js"></script>
+
+    <h1>Tupes of guns in Hunt</h1>
+    <div class="footerFormOne">
+        <form onsubmit='return checkForm(this)' class="emailForm" id="emailForm" >
+            <label>
+                <input
+                  class="messageInput"
+                  type="text"
+                  id="nameOfGun"
+                  name="nameofgun"
+                  placeholder="name of gun"
+                  maxlength="200"
+                  required
+                />
+                <span class="status-message"></span>
+              </label>
+          <label>
+            <input
+              class="messageInput"
+              type="text"
+              id="discription"
+              name="discription"
+              placeholder="discription"
+              maxlength="200"
+              required
+            />
+            <span class="status-message"></span>
+          </label>
+          <label for="cartridge">cartridge type:</label>
+
+<select name="cartridge" id="cartridge">
+  <option value="Compact ammo">Compact</option>
+  <option value="Medium ammo">Medium</option>
+  <option value="Long ammo">Long</option>
+  <option value="Shotgun ammo">Shotgun</option>
+  <option value="Special ammo">Special</option>
+</select>
+
+            <label for="typeofgun">type of gun:</label>
+
+<select name="typeofgun" id="typeofgun">
+<option value="Rifle">Rifle</option>
+<option value="Shotgun">Shotgun</option>
+<option value="Pistol">Pistol</option>
+<option value="Special">Special</option>
+</select>
+          <label for="damagerange">damage range:</label>
+
+<select name="damagerange" id="damagerange">
+  <option value="0-50">0-50</option>
+  <option value="50-100">50-100</option>
+  <option value="100-150">100-150</option>
+  <option value="150-200">150-200</option>
+</select>
+
+          
+          <button type="submit" class="footerBtn">Добавить</button>
+        </form>
+      </div>
+</body>
+</html>
